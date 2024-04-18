@@ -25,6 +25,7 @@ public class Play_Partile : MonoBehaviour
     {
         Blast.Stop();
         Blast.gameObject.SetActive(false);
+        //v
     }
 }
 
