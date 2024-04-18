@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb22a4f4ed9e3b4fb440270ba58cf7c, type: 3}
+  m_Name: Char2
+  m_EditorClassIdentifier: 
+  characterName: Char2
+  power: 0.638
+  range: 0.531
+  reload: 0.626
+  damage: 0.526
+  Price: 10000
