@@ -37,13 +37,13 @@ public class CharacterSelectionManager : MonoBehaviour
         UpdateStats();
         // backButton.GetComponent<DOTweenAnimation>().DORestart();
         // coinBG.GetComponent<DOTweenAnimation>().DORestart();
-        Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
-        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        if (canvas != null)
-        {
-            canvas.renderMode = RenderMode.WorldSpace;
-            canvas.worldCamera = cam;
-        }
+        //Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
+        //cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        //if (canvas != null)
+        //{
+        //    canvas.renderMode = RenderMode.WorldSpace;
+        //    canvas.worldCamera = cam;
+        //}
     }
     public void LeftBtnClicked()
     {

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class LevelSelectionManager : MonoBehaviour
 {
     public Button[] levelButtons;
-    public Text[] lockImages;
+    public GameObject[] lockImages;
     public Image[] selectImages;
     public Button nextBtn;
     public GameObject modeSelectionPanel;
@@ -26,15 +26,15 @@ public class LevelSelectionManager : MonoBehaviour
                 if (i < PlayerData.TotalLevelUnlocked())
                 {
                     levelButtons[i].interactable = true;
-                    //  lockImages[i].gameObject.SetActive(false);
+                    lockImages[i].gameObject.SetActive(false);
                     //lockImages[i].text = "Played";
                 }
                 else
                 {
                     levelButtons[i].interactable = false;
                     //lockImages[i].text = "Play";
-                    levelButtons[i].gameObject.GetComponent<Image>().material = null;
-                    //lockImages[i].gameObject.SetActive(true);
+                   // levelButtons[i].gameObject.GetComponent<Image>().material = null;
+                    lockImages[i].gameObject.SetActive(true);
                 }
             }
             UnselectLevelBtn();
