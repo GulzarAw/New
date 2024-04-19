@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class PlayerData
 {
-    private static int coins;
+    private static int coins = 250;
     private static int selectedModeID;
     private static int selectedLevelID;
     private static int selectedParkingLevelID;

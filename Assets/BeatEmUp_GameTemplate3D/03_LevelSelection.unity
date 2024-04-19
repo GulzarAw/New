@@ -10765,7 +10765,17 @@ MonoBehaviour:
   - {fileID: 1189514234}
   - {fileID: 1081776764}
   - {fileID: 2097448792}
-  selectImages: []
+  selectImages:
+  - {fileID: 1634333545}
+  - {fileID: 1079446366}
+  - {fileID: 617602957}
+  - {fileID: 2129115124}
+  - {fileID: 154568288}
+  - {fileID: 889112820}
+  - {fileID: 27337704}
+  - {fileID: 253257080}
+  - {fileID: 2093567631}
+  - {fileID: 430349510}
   nextBtn: {fileID: 1736875906}
   modeSelectionPanel: {fileID: 0}
   coinBG: {fileID: 0}

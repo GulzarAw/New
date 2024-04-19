@@ -3902,10 +3902,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a168b3b1109b840b213a9026a57a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenucoinText: {fileID: 0}
+  mainMenucoinText: {fileID: 950541930556131581}
   ExitPanel: {fileID: 380960603385748600}
   Char: {fileID: 0}
-  cam: {fileID: 0}
+  cam: {fileID: 706418738508125494}
 --- !u!1 &1364908924328854
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,10 +4634,10 @@ MonoBehaviour:
   coinBG: {fileID: 0}
   characterName: {fileID: 0}
   characterPrice: {fileID: 7750158099351782449}
-  coins: {fileID: 0}
+  coins: {fileID: 6884392193661268716}
   enogh_Coins: {fileID: 0}
   All_Char: {fileID: 0}
-  cam: {fileID: 0}
+  cam: {fileID: 706418738508125494}
 --- !u!1 &1443168882843786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6395,6 +6395,7 @@ GameObject:
   - component: {fileID: 222474832902380966}
   - component: {fileID: 3529004354941942509}
   - component: {fileID: 3962941622141021617}
+  - component: {fileID: 2195128456740015375}
   m_Layer: 0
   m_Name: TouchScreenControls
   m_TagString: Untagged
@@ -6558,6 +6559,19 @@ MonoBehaviour:
   optionalScrambleMode: 0
   optionalShakeRandomnessMode: 0
   optionalString: 
+--- !u!114 &2195128456740015375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748371876922862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026e3628b8be3b1408eea8a18ae06019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 706418738508125488}
 --- !u!1 &1755703436771380
 GameObject:
   m_ObjectHideFlags: 0

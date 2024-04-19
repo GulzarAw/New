@@ -26,6 +26,8 @@ public class CharacterSelectionManager : MonoBehaviour
 
     private void OnEnable()
     {
+        coins.text = PlayerData.Coins.ToString();
+
         characterID = PlayerData.SelectedCharacterID;
         All_Char = GameObject.FindGameObjectWithTag("Characters");
         for (int i = 0; i < All_Char.transform.childCount; i++)
@@ -37,13 +39,14 @@ public class CharacterSelectionManager : MonoBehaviour
         UpdateStats();
         // backButton.GetComponent<DOTweenAnimation>().DORestart();
         // coinBG.GetComponent<DOTweenAnimation>().DORestart();
-        //Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
-        //cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        //if (canvas != null)
-        //{
-        //    canvas.renderMode = RenderMode.WorldSpace;
-        //    canvas.worldCamera = cam;
-        //}
+        cam.gameObject.SetActive(true);
+        Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
+        // cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        if (canvas != null)
+        {
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = cam;
+        }
     }
     public void LeftBtnClicked()
     {

@@ -7,7 +7,7 @@ public class LevelSelectionManager : MonoBehaviour
 {
     public Button[] levelButtons;
     public GameObject[] lockImages;
-    public Image[] selectImages;
+    public GameObject[] selectImages;
     public Button nextBtn;
     public GameObject modeSelectionPanel;
     public GameObject coinBG;
@@ -49,9 +49,11 @@ public class LevelSelectionManager : MonoBehaviour
         {
             PlayerData.SelectedLevelID = levelNum;
             nextBtn.gameObject.SetActive(true);
-           // int a = levelNum + 1;
-           // selectImages[levelNum].gameObject.SetActive(true);
-         //   SSTools.ShowMessage("Level_No: " + a + " Is Selectected", SSTools.Position.bottom, SSTools.Time.threeSecond);
+            selectImages[levelNum].gameObject.SetActive(true);
+
+            // int a = levelNum + 1;
+            // selectImages[levelNum].gameObject.SetActive(true);
+            //   SSTools.ShowMessage("Level_No: " + a + " Is Selectected", SSTools.Position.bottom, SSTools.Time.threeSecond);
         }
     }
 

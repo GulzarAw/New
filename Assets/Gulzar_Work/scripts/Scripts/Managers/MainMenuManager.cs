@@ -10,14 +10,16 @@ public class MainMenuManager : MonoBehaviour
     // Use this for initialization
     private void OnEnable()
     {
-        //Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
-        //cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        //if (canvas != null)
-        //{
-        //    canvas.renderMode = RenderMode.WorldSpace;
-        //    canvas.worldCamera = cam;
-        //}
+        cam.gameObject.SetActive(true);
+        Canvas canvas = GameObject.FindGameObjectWithTag("Can").GetComponent<Canvas>();
+       // cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        if (canvas != null)
+        {
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = cam;
+        }
         Char = GameObject.FindGameObjectWithTag("MainMenu_Char");
+        mainMenucoinText.text = PlayerData.Coins.ToString();
     }
     public void MoreGames()
     {
