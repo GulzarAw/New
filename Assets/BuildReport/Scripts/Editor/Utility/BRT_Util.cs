@@ -1912,8 +1912,6 @@ namespace BuildReportTool
 			assetDependencies.SetSavedPath(xmlFileFullPathToSaveTo);
 
 			Debug.Log("Build Report Tool: Saved asset dependencies at \"" + assetDependencies.SavedPath + "\"");
-		}
-		
-		
+		}		
 	}
 } // namespace BuildReportTool
