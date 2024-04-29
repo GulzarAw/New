@@ -16,11 +16,13 @@ public static class PlayerData
     {
         get
         {
+            coins =  PlayerPrefs.GetInt("Coins" , 250);
             return coins;
         }
         set
         {
             coins = value;
+            PlayerPrefs.SetInt("Coins", coins);
         }
     }
 

@@ -13,6 +13,7 @@ public class LevelSelectionManager : MonoBehaviour
     public GameObject coinBG;
     public Text coinText;
     public Material Unlocked_Material;
+    public GameObject[] Panels;
 
     private void OnEnable()
     {
@@ -21,8 +22,11 @@ public class LevelSelectionManager : MonoBehaviour
         PlayerData.Total_Levels_Unlocked = PlayerPrefs.GetInt("LevelsUnlocked",1);
         if (ShareValues.mode_no == 0)
         {
+            All_Panel_Off();
+          
             for (int i = 0; i < levelButtons.Length; i++)
             {
+               
                 if (i < PlayerData.TotalLevelUnlocked())
                 {
                     levelButtons[i].interactable = true;
@@ -76,11 +80,34 @@ public class LevelSelectionManager : MonoBehaviour
             selectImages[i].gameObject.SetActive(false);
         }
     }
+    void All_Panel_Off()
+    {
+        Debug.LogError(PlayerData.TotalLevelUnlocked());
+        for(int i= 0; i< Panels.Length; i++)
+        {
+            Panels[i].gameObject.SetActive(false);
+        }
+        if (PlayerData.TotalLevelUnlocked() <= 3)
+        {
+            Panels[0].SetActive(true);
+        }
+        else if (PlayerData.TotalLevelUnlocked() >= 4 && PlayerData.TotalLevelUnlocked() <= 6)
+        {
+            Panels[1].SetActive(true);
+        }
+        else if (PlayerData.TotalLevelUnlocked() >= 7 && PlayerData.TotalLevelUnlocked() <= 9)
+        {
+            Panels[2].SetActive(true);
+        }
+        else
+        {
+            Panels[3].SetActive(true);
+        }
+    }
     void AdCoinReward()
     {
         PlayerData.Coins += 100;
         coinText.text = PlayerData.Coins.ToString();
     }
 }
-
    

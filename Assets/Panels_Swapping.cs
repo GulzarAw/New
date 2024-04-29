@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Panels_Swapping : MonoBehaviour
 {
     public GameObject[] Level_Panels;
-    private int Panel_ID = 0;
+    public  int Panel_ID = 0;
     
 
     // Start is called before the first frame update
