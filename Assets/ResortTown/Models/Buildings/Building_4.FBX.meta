@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 756b0cdaffe723f44866ebeeb006e6b5
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -227,7 +227,7 @@ ModelImporter:
     importLights: 1
     nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
@@ -241,12 +241,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVPackMargin: 20
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -280,6 +280,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
