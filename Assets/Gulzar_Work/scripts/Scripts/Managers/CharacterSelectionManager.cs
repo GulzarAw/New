@@ -27,13 +27,13 @@ public class CharacterSelectionManager : MonoBehaviour
     private void OnEnable()
     {
         coins.text = PlayerData.Coins.ToString();
-
         characterID = PlayerData.SelectedCharacterID;
         All_Char = GameObject.FindGameObjectWithTag("Characters");
         for (int i = 0; i < All_Char.transform.childCount; i++)
         {
             characterModles[i] = All_Char.transform.GetChild(i).gameObject;
         }
+        All_Character_off();
         characterModles[characterID].SetActive(true);
        // coins.text = PlayerData.Coins.ToString();
         UpdateStats();
@@ -82,16 +82,15 @@ public class CharacterSelectionManager : MonoBehaviour
     }
     public void BuyBthClicked()
     {
-
         if (PlayerData.Coins >= characterStats[characterID].Price)
         {
             PlayerData.Coins -= characterStats[characterID].Price;
             PlayerData.UnlockCharacter(characterID);
             buyButton.gameObject.SetActive(false);
-            priceBG.gameObject.SetActive(false);
+            ////priceBG.gameObject.SetActive(false);
             nextButton.gameObject.SetActive(true);
-            nextButton.GetComponent<DOTweenAnimation>().DORestart();
             coins.text = PlayerData.Coins.ToString();
+            nextButton.GetComponent<DOTweenAnimation>().DORestart();
         }
         else
         {

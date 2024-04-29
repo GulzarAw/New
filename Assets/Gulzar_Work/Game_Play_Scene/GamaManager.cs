@@ -68,11 +68,9 @@ public class GamaManager : MonoBehaviour
         }
         else if (ButtonName == "home")
         {
-
             Time.timeScale = 1;
           //  AudioManager.instance.Play("BtnClick");
             SceneManager.LoadScene(0);
-
         }
         else if (ButtonName == "next")
         {
@@ -117,15 +115,12 @@ public class GamaManager : MonoBehaviour
     }
     public void All_Levels_Off()
     {
-        for(int i = 0; i < Levels.Length;  i++)
+        for(int i = 0; i < Levels.Length; i++)
         {
             Levels[i].SetActive(false);
         }
     }
   
 }  
-
-
-
 
    

@@ -18,6 +18,7 @@ public class EnemyAI : EnemyActions, IDamagable<DamageObject>{
 		//add this enemy to the enemylist
 		EnemyManager.enemyList.Add(gameObject);
 
+		//check here list
 		//set z spread (zspread is used to keep space between the enemies)
 		ZSpread = (EnemyManager.enemyList.Count-1);
 		Invoke ("SetZSpread", .1f);	
