@@ -2207,6 +2207,7 @@ MonoBehaviour:
   - {fileID: 1240397995}
   - {fileID: 740770183}
   - {fileID: 1300513323}
+  Panel_ID: 0
 --- !u!1 &607202813
 GameObject:
   m_ObjectHideFlags: 0
@@ -11021,6 +11022,7 @@ MonoBehaviour:
   - {fileID: 430349510}
   nextBtn: {fileID: 1736875906}
   modeSelectionPanel: {fileID: 0}
+  Content: {fileID: 595534431}
   coinBG: {fileID: 0}
   coinText: {fileID: 0}
   Unlocked_Material: {fileID: 0}

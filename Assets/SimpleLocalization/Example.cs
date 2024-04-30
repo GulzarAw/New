@@ -55,4 +55,4 @@ namespace Assets.SimpleLocalization
 			Application.OpenURL("https://www.assetstore.unity3d.com/#!/content/120113");
 		}
 	}
-}
+}  

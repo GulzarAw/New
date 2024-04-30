@@ -10,6 +10,7 @@ public class LevelSelectionManager : MonoBehaviour
     public GameObject[] selectImages;
     public Button nextBtn;
     public GameObject modeSelectionPanel;
+    public GameObject Content;
     public GameObject coinBG;
     public Text coinText;
     public Material Unlocked_Material;
@@ -90,18 +91,21 @@ public class LevelSelectionManager : MonoBehaviour
         if (PlayerData.TotalLevelUnlocked() <= 3)
         {
             Panels[0].SetActive(true);
+            Content.GetComponent<Panels_Swapping>().Panel_ID = 0;
         }
         else if (PlayerData.TotalLevelUnlocked() >= 4 && PlayerData.TotalLevelUnlocked() <= 6)
         {
-            Panels[1].SetActive(true);
+            Panels[1].SetActive(true); Content.GetComponent<Panels_Swapping>().Panel_ID = 1;
+
         }
         else if (PlayerData.TotalLevelUnlocked() >= 7 && PlayerData.TotalLevelUnlocked() <= 9)
         {
-            Panels[2].SetActive(true);
+            Panels[2].SetActive(true); Content.GetComponent<Panels_Swapping>().Panel_ID = 2;
+
         }
         else
         {
-            Panels[3].SetActive(true);
+            Panels[3].SetActive(true); Content.GetComponent<Panels_Swapping>().Panel_ID = 3;
         }
     }
     void AdCoinReward()
