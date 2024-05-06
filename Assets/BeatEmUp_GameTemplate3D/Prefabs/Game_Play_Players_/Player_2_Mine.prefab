@@ -232,7 +232,7 @@ MonoBehaviour:
   MaxHp: 20
   CurrentHp: 20
   invulnerable: 0
-  HUDPortrait: {fileID: 21300000, guid: cf9fe99b226b1954184a5c764ef2efd7, type: 3}
+  HUDPortrait: {fileID: 21300000, guid: d0358009e2564794fbf42741ad0a4762, type: 3}
   PlayerName: Jason
 --- !u!114 &6669493859737549009
 MonoBehaviour:
@@ -298,8 +298,7 @@ MonoBehaviour:
     collDistance: 0.76
     collHeight: 1.17
     hitTime: 0
-    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4,
-      type: 3}
+    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4, type: 3}
   - animTrigger: Punch2
     damage: 3
     duration: 0.3
@@ -317,8 +316,7 @@ MonoBehaviour:
     collDistance: 0.76
     collHeight: 1.17
     hitTime: 0
-    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4,
-      type: 3}
+    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4, type: 3}
   - animTrigger: Punch3
     damage: 4
     duration: 0.5
@@ -336,8 +334,7 @@ MonoBehaviour:
     collDistance: 0.76
     collHeight: 1.17
     hitTime: 0
-    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4,
-      type: 3}
+    inflictor: {fileID: 1443228785723502, guid: 7934979097e14dd4cae0341be42961d4, type: 3}
   KickCombo:
   - animTrigger: Kick1
     damage: 2
@@ -559,8 +556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDirection: -1
   DustEffectLand: {fileID: 115594, guid: 6c925d90c8ae6b148b428e7fe79c3f71, type: 3}
-  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f,
-    type: 3}
+  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f, type: 3}
   HitEffect: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
   DefendEffect: {fileID: 194486, guid: 103ca3ac1720c8445935db20b30e3305, type: 3}
   animator: {fileID: 0}
@@ -1161,8 +1157,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8919827855364397605}
-  m_LocalRotation: {x: -0.11762716, y: -0.000000012725613, z: -0.000000005390557,
-    w: 0.99305785}
+  m_LocalRotation: {x: -0.11762716, y: -0.000000012725613, z: -0.000000005390557, w: 0.99305785}
   m_LocalPosition: {x: 0.1402314, y: 0.0005588722, z: -0.000914917}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1511,8 +1506,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8919827855364397627}
-  m_LocalRotation: {x: -3.3615696e-16, y: -0.000000024680052, z: -0.000000013620594,
-    w: 1}
+  m_LocalRotation: {x: -3.3615696e-16, y: -0.000000024680052, z: -0.000000013620594, w: 1}
   m_LocalPosition: {x: -0.14023136, y: -0.00055888173, z: 0.00091506954}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
