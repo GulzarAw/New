@@ -6,6 +6,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject ExitPanel;
     public GameObject Char;
     public Camera cam;
+    public GameObject Will_Add_Soon_Panel;
 
     // Use this for initialization
     private void OnEnable()
@@ -23,16 +24,19 @@ public class MainMenuManager : MonoBehaviour
     }
     public void MoreGames()
     {
-       // Application.OpenURL("");
+        // Application.OpenURL("");
+        Will_Add_Soon_Panel.SetActive(true);
     }
     public void RateUS()
     {
-       // Application.OpenURL("");
+        // Application.OpenURL("market://details?id=");
+        Will_Add_Soon_Panel.SetActive(true);
     }
 
     public void PrivacyPolicy()
     {
         //Application.OpenURL("");
+        Will_Add_Soon_Panel.SetActive(true);
     }
 
     public void NoBtnClicked()
