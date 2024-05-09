@@ -33,7 +33,7 @@ public class EnemyActions : MonoBehaviour {
 
 	[Header ("Settings")]
 	public bool pickARandomName; //assign a random name
-	public TextAsset enemyNamesList; //the list of enemy names
+	//public TextAsset enemyNamesList; //the list of enemy names
 	public string enemyName = ""; //the name of this enemy
 	public float attackRangeDistance = 1.4f; //the distance from the target where the enemy is able to attack
 	public float closeRangeDistance = 2f; //the distance from the target at close range
@@ -115,7 +115,7 @@ public class EnemyActions : MonoBehaviour {
 	public void OnStart(){
 
 		//assign a name to this enemy
-		if(pickARandomName) enemyName = GetRandomName();
+		//if(pickARandomName) enemyName = GetRandomName();
 
 		//set player as target
 		if(target == null) target = GameObject.FindGameObjectWithTag("Player");
@@ -572,27 +572,27 @@ public class EnemyActions : MonoBehaviour {
 	}
 
 	//returns a random name
-	string GetRandomName(){
-		if(enemyNamesList == null) {
-			Debug.Log("no list of names was found, please create 'EnemyNames.txt' that contains a list of enemy names and put it in the 'Resources' folder.");
-			return "";
-		}
-
-		//convert the lines of the txt file to an array
-		string data = enemyNamesList.ToString();
-		string cReturns = System.Environment.NewLine + "\n" + "\r"; 
-		string[] lines = data.Split(cReturns.ToCharArray());
-
-		//pick a random name from the list
-		string name = "";
-		int cnt = 0;
-		while(name.Length == 0 && cnt < 100) {
-			int rand = Random.Range(0, lines.Length);
-			name = lines[rand];
-			cnt += 1;
-		}
-		return name;
-	}
+	//string GetRandomName(){
+	//	if(enemyNamesList == null) {
+	//		Debug.Log("no list of names was found, please create 'EnemyNames.txt' that contains a list of enemy names and put it in the 'Resources' folder.");
+	//		return "";
+	//	}
+	//
+	//	//convert the lines of the txt file to an array
+	//	string data = enemyNamesList.ToString();
+	//	string cReturns = System.Environment.NewLine + "\n" + "\r"; 
+	//	string[] lines = data.Split(cReturns.ToCharArray());
+	//
+	//	//pick a random name from the list
+	//	string name = "";
+	//	int cnt = 0;
+	//	while(name.Length == 0 && cnt < 100) {
+	//		int rand = Random.Range(0, lines.Length);
+	//		name = lines[rand];
+	//		cnt += 1;
+	//	}
+	//	return name;
+	//}
 }
 
    

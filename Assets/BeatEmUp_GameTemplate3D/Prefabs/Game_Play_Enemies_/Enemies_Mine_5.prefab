@@ -789,8 +789,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34738248742314545}
-  m_LocalRotation: {x: -8.347817e-16, y: -0.000000040512536, z: -0.000000020605514,
-    w: 1}
+  m_LocalRotation: {x: -8.347817e-16, y: -0.000000040512536, z: -0.000000020605514, w: 1}
   m_LocalPosition: {x: -0.1399219, y: 0.005085182, z: 0.00072784425}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2209,8 +2208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDirection: -1
   DustEffectLand: {fileID: 115594, guid: 6c925d90c8ae6b148b428e7fe79c3f71, type: 3}
-  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f,
-    type: 3}
+  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f, type: 3}
   HitEffect: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
   DefendEffect: {fileID: 194486, guid: 103ca3ac1720c8445935db20b30e3305, type: 3}
   animator: {fileID: 646114268999818090}
@@ -2485,8 +2483,7 @@ MonoBehaviour:
   canHitDestroyableObjects: 0
   lastAttackTime: 0
   pickARandomName: 1
-  enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
-  enemyName: 
+  enemyName: Archie
   attackRangeDistance: 1.2
   closeRangeDistance: 2.4
   midRangeDistance: 3.5

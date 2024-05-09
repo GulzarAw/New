@@ -14,6 +14,13 @@ public class Level_Text : MonoBehaviour
         All_Levels_Off();
         Levels[currentLevel].SetActive(true);
     }
+
+    private void OnEnable()
+    {
+        currentLevel = PlayerData.SelectedLevelID;
+        All_Levels_Off();
+        Levels[currentLevel].SetActive(true);
+    }
     public void All_Levels_Off()
     {
         for (int i = 0; i < Levels.Length; i++)
@@ -21,5 +28,5 @@ public class Level_Text : MonoBehaviour
             Levels[i].SetActive(false);
         }
     }
-
+   
 }

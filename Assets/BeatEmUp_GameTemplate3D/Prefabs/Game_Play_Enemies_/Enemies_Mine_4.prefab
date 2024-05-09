@@ -1043,8 +1043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3269603862022785965}
-  m_LocalRotation: {x: -0.11762719, y: -0.000000012756287, z: -0.0000000031521834,
-    w: 0.99305785}
+  m_LocalRotation: {x: -0.11762719, y: -0.000000012756287, z: -0.0000000031521834, w: 0.99305785}
   m_LocalPosition: {x: 0.13976672, y: -0.0045320224, z: 0.0008441162}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1075,8 +1074,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3269603862022785967}
-  m_LocalRotation: {x: -0.000000014901165, y: -0.000000011175872, z: -0.0000000136205935,
-    w: 1}
+  m_LocalRotation: {x: -0.000000014901165, y: -0.000000011175872, z: -0.0000000136205935, w: 1}
   m_LocalPosition: {x: -0.1397667, y: 0.0045320224, z: -0.00084426877}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2168,8 +2166,7 @@ MonoBehaviour:
   canHitDestroyableObjects: 0
   lastAttackTime: 0
   pickARandomName: 1
-  enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
-  enemyName: 
+  enemyName: Alexander
   attackRangeDistance: 1.2
   closeRangeDistance: 2.4
   midRangeDistance: 3.5
@@ -2377,8 +2374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDirection: -1
   DustEffectLand: {fileID: 115594, guid: 6c925d90c8ae6b148b428e7fe79c3f71, type: 3}
-  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f,
-    type: 3}
+  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f, type: 3}
   HitEffect: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
   DefendEffect: {fileID: 194486, guid: 103ca3ac1720c8445935db20b30e3305, type: 3}
   animator: {fileID: 6359477359297769989}

@@ -471,8 +471,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066253397440946054}
-  m_LocalRotation: {x: -0.117627166, y: -0.000000021703599, z: -0.0000000067910286,
-    w: 0.99305785}
+  m_LocalRotation: {x: -0.117627166, y: -0.000000021703599, z: -0.0000000067910286, w: 0.99305785}
   m_LocalPosition: {x: 0.13897644, y: -0.0031605337, z: -0.0019435119}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -756,8 +755,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066253397440946072}
-  m_LocalRotation: {x: 0.0000000037252903, y: -0.000000014901163, z: -0.000000011641533,
-    w: 1}
+  m_LocalRotation: {x: 0.0000000037252903, y: -0.000000014901163, z: -0.000000011641533, w: 1}
   m_LocalPosition: {x: -0.13897644, y: 0.0031605242, z: 0.0019438171}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2090,8 +2088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDirection: -1
   DustEffectLand: {fileID: 115594, guid: 6c925d90c8ae6b148b428e7fe79c3f71, type: 3}
-  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f,
-    type: 3}
+  DustEffectJump: {fileID: 1350558754252556, guid: aa01e8fe85c4b55498cb17f0e85d5b2f, type: 3}
   HitEffect: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
   DefendEffect: {fileID: 194486, guid: 103ca3ac1720c8445935db20b30e3305, type: 3}
   animator: {fileID: 4859352181857282269}
@@ -2366,8 +2363,7 @@ MonoBehaviour:
   canHitDestroyableObjects: 0
   lastAttackTime: 0
   pickARandomName: 1
-  enemyNamesList: {fileID: 4900000, guid: 48faffacd763b514599640f2b52243d2, type: 3}
-  enemyName: 
+  enemyName: Jacob
   attackRangeDistance: 1.2
   closeRangeDistance: 2.4
   midRangeDistance: 3.5
