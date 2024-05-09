@@ -312,4 +312,4 @@ public enum DIRECTION {
 	Left = 1,
 	Up = 2,
 	Down = -2,
-};
+}; 
