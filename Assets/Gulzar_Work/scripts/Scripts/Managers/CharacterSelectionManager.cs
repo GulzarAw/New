@@ -90,7 +90,7 @@ public class CharacterSelectionManager : MonoBehaviour
             ////priceBG.gameObject.SetActive(false);
             nextButton.gameObject.SetActive(true);
             coins.text = PlayerData.Coins.ToString();
-            nextButton.GetComponent<DOTweenAnimation>().DORestart();
+           // nextButton.GetComponent<DOTweenAnimation>().DORestart();
         }
         else
         {
@@ -133,6 +133,7 @@ public class CharacterSelectionManager : MonoBehaviour
        // DisableAllCharacter();
         characterModles[characterID].SetActive(true);
         characterPrice.text = characterStats[characterID].Price.ToString();
+        characterName.text = characterStats[characterID].characterName.ToString();
         DOTween.To(() => powerBar.fillAmount, x => powerBar.fillAmount = x, characterStats[characterID].power, 2f).SetEase(Ease.OutBounce);
         DOTween.To(() => damageBar.fillAmount, x => damageBar.fillAmount = x, characterStats[characterID].damage, 2f).SetEase(Ease.OutBounce);
         DOTween.To(() => reloadBar.fillAmount, x => reloadBar.fillAmount = x, characterStats[characterID].reload, 2f).SetEase(Ease.OutBounce);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb22a4f4ed9e3b4fb440270ba58cf7c, type: 3}
   m_Name: Char2
   m_EditorClassIdentifier: 
-  characterName: Char2
+  characterName: Steven
   power: 0.638
   range: 0.531
   reload: 0.626

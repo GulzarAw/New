@@ -8,12 +8,14 @@ public class UIHUDHealthBar : MonoBehaviour {
 	public Image playerPortrait;
 	public Slider HpSlider;
 	public bool isPlayer;
+    HealthSystem healthSystem ;
 
-	void OnEnable() {
+    void OnEnable() {
 		HealthSystem.onHealthChange += UpdateHealth;
-	}
+        if (isPlayer) SetPlayerPortraitAndName();
+    }
 
-	void OnDisable() {
+    void OnDisable() {
 		HealthSystem.onHealthChange -= UpdateHealth;
 	}
 
@@ -43,11 +45,16 @@ public class UIHUDHealthBar : MonoBehaviour {
 	//loads the HUD icon of the player from the player prefab (Healthsystem)
 	void SetPlayerPortraitAndName(){
 		if(playerPortrait != null){
+			
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
-			HealthSystem healthSystem = player.GetComponent<HealthSystem>();
+			if(!healthSystem)
+			{
+				healthSystem = player.GetComponent<HealthSystem>();
+			}
 
 			if(player && healthSystem != null){
 
+				Debug.LogError("set_");
 				//set portrait
 				Sprite HUDPortrait = healthSystem.HUDPortrait;
 				playerPortrait.overrideSprite = HUDPortrait;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb22a4f4ed9e3b4fb440270ba58cf7c, type: 3}
   m_Name: Char3
   m_EditorClassIdentifier: 
-  characterName: Char3
+  characterName: Thomas
   power: 0.756
   range: 0.833
   reload: 0.906
